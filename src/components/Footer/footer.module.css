@@ -1,0 +1,221 @@
+.footerBg {
+    background-color: #F7F7FC;
+}
+
+.footer {
+    text-align: center;
+    padding: 40px 0px;
+    font-family: var(--font-gilroy-bold);
+    font-size: 12px;
+}
+
+.footerLinks {
+    margin-bottom: 40px;
+}
+
+.footer .hdr {
+    font-size: 1.17em;
+}
+
+.footerLinks div {
+    margin: 20px 0px;
+}
+
+.footerAddr {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.footerAddrImg {
+    width: 50%;
+    font-size: 12px;
+    padding-right: 10px;
+    border-right: 1px dotted;
+}
+
+.footerAddrImg img {
+    width: 60px;
+}
+
+.footerAddrTxt {
+    width: 50%;
+    font-size: 12px;
+    font-family: var(--font-gilroy-medium);
+}
+
+.footerLogo {
+    width: 30%;
+}
+
+.footerAbt {
+    font-size: 11px;
+    padding: 20px;
+    line-height: 20px;
+    font-family: var(--font-gilroy-medium);
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footerSocial {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footerIcon,
+.footerIconTwitter {
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.footerIconTwitter {
+    padding-right: 0px;
+}
+
+.footerIcon img {
+    width: 90%;
+}
+
+.footerIconTwitter img {
+    width: 70%;
+}
+
+.footerCopyrgt,
+.footerDisclaimer {
+    font-size: 10px;
+    font-family: var(--font-gilroy-medium);
+    text-align: center;
+}
+
+.footerDisclaimer {
+    margin: 40px 20px 0px 20px;
+}
+
+.footerRight a {
+    font-family: var(--font-gilroy-medium);
+}
+
+.contactHdr {
+    margin-bottom: 15px !important;
+}
+
+.contactMobile {
+    margin-bottom: 10px;
+}
+
+.contactMobile,
+.contactEmail {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    font-family: var(--font-gilroy-medium);
+}
+
+@media (min-width: 48em) {
+    .footer {
+        text-align: left;
+        font-size: 14px;
+        padding: 20px;
+    }
+
+    .footerHolder {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerRight {
+        display: flex;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .footerLinks {
+        width: 45%;
+    }
+
+    .footer .hdr {
+        font-size: 1.5em;
+        margin-bottom: 40px;
+    }
+
+    .footerLocation {
+        padding-top: 20px;
+        width: 50%;
+    }
+
+    .footerLeft {
+        width: 100%;
+    }
+
+    .footerLogo {
+        height: 35px;
+        width: 130px;
+    }
+
+    .logoOld {
+        height: 64px;
+        width: 130px;
+    }
+
+    .footerAddr {
+        display: flex;
+        align-items: center;
+        margin: 40px 0px;
+        justify-content: flex-start;
+        padding: 0px;
+    }
+
+    .footerAddrImg {
+        width: 30%;
+        padding-right: 30px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .footerAbt {
+        padding: 0;
+        padding-top: 10px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .contactEmail {
+        margin-bottom: 5px;
+    }
+
+    .contactMobile,
+    .contactEmail {
+        justify-content: start;
+    }
+}
+
+@media (min-width: 75em) {
+    .footer {
+        padding: 40px 0px;
+    }
+
+    .footerHolder {
+        flex-direction: row-reverse;
+    }
+
+    .footerRight {
+        padding-left: 90px;
+        width: 60%;
+    }
+
+    .footerLeft {
+        width: 40%;
+    }
+
+    .reviewfooter {
+        width: 100% !important;
+    }
+}

@@ -1,0 +1,424 @@
+.insightsSection {
+  margin: auto;
+  padding: 40px 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 5rem;
+}
+
+.blogHeadingTitle {
+  font-size: 32px;
+  font-weight: 500;
+
+  line-height: 1.2;
+
+  color: #000000;
+
+  margin-bottom: 2rem;
+}
+
+.viewAllBtn {
+  background-color: black !important;
+  color: white !important;
+  border-radius: 50px !important;
+  padding: 8px 20px !important;
+  font-weight: bold !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.viewAllBtn:hover {
+  background-color: white !important;
+  color: black !important;
+  border: 2px solid black !important;
+}
+
+.articlesGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  cursor: pointer;
+}
+
+.featuredImageContainer {
+  width: auto;
+  height: 250px;
+}
+
+.featuredArticle {
+  /* display: flex; */
+  background: #f9f9f9;
+  border-radius: 15px;
+  overflow: hidden;
+
+  position: relative;
+}
+
+.featuredContent {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  flex: 1;
+  background: #F3F4F7;
+  position: relative;
+
+  /* width: 700px; */
+  /* height: 575px; */
+
+  padding-left: 1.3rem;
+  /* height: 500px; */
+}
+
+.badge {
+  background: black;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+
+  font-weight: 500;
+
+  border-radius: 50px;
+  opacity: 1;
+}
+
+.blogTitleText {
+  font-size: 36px;
+  font-weight: 600;
+  padding-top: .44rem;
+  padding-bottom: 1rem;
+
+  line-height: 1.4;
+}
+
+.blogDespText {
+  font-size: 18px;
+  font-weight: 500;    
+  text-align: justify;
+  padding-right: 1.5rem;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 40px;
+}
+
+.authorName {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.authorRole {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.category {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  margin: 0 .5rem;
+  
+  height: 28px;
+  color: white;
+}
+
+.lifestyle {
+  background: #e67e22;
+}
+
+.innovation {
+  background: #3498db;
+}
+
+.sustainability {
+  background: #27ae60;
+}
+
+.design {
+  background: #e74c3c;
+}
+
+.smallArticles {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  cursor: pointer;
+}
+
+.smallArticle {
+  width: auto;
+  /* height: 250px; */
+
+  position: relative;
+
+  background: #f9f9f9;
+  border-radius: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.articleSubText {
+  top: 100%;
+}
+
+.articleImage, .articleSubImage {
+  object-fit: cover;
+}
+
+.articleSubImage {
+  width: 100%;
+  height: 250px;
+  border-radius: 15px;
+}
+
+.smallArticlesTitle {
+  /* width: 80%; */
+  text-wrap: wrap;
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 1rem;
+}
+
+.smArticle {
+  width: 100%;
+}
+
+@media (min-width: 48em) {
+
+  .featuredImageContainer {
+    width: auto;
+    height: 500px;
+  }
+    
+  .smallArticle {
+    width: auto;
+    height: 450px;
+  }
+
+  .articleSubImage {
+    width: 100%;
+    height: 450px;
+    border-radius: 15px;
+  }
+  
+  .blogDespText {
+    padding-right: 2rem;
+  }
+
+}
+
+@media (min-width: 75em) {
+  .insightsSection {
+    margin: auto;
+    padding: 40px 0;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+  
+  .blogHeadingTitle {
+    font-size: 48px;
+    font-weight: 500;
+  
+    line-height: 1.2;
+  
+    color: #000000;
+
+    margin-bottom: 0;
+  }
+    
+  .blogDespText {
+    font-size: 14px;
+    width: 98%;
+    padding-right: 1rem;
+  }
+
+  .viewAllBtn {
+    background-color: black !important;
+    color: white !important;
+    border-radius: 50px !important;
+    padding: 8px 20px !important;
+    font-weight: bold !important;
+    transition: all 0.3s ease-in-out !important;
+  }
+  
+  .viewAllBtn:hover {
+    background-color: white !important;
+    color: black !important;
+    border: 2px solid black !important;
+  }
+  
+  .articlesGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .featuredImageContainer {
+    width: 600px;
+    height: 500px;
+  }
+  
+  .featuredArticle {
+    /* display: flex; */
+    background: #f9f9f9;
+    border-radius: 15px;
+    overflow: hidden;
+  
+    position: relative;
+  }
+
+  .smArticle {
+    width: 400px;
+  }
+  
+  .articleImage, .articleSubImage {
+    width: 100%;
+    transition: transform 0.4s ease-in-out;
+    object-fit: cover;
+  }
+  
+  .articleImage:hover {
+    transform: scale(1.04);
+  }
+  
+  .featuredContent {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    flex: 1;
+    background: #F3F4F7;
+  
+    position: absolute;
+    top: 0;
+    right: 0;
+  
+    width: 700px;
+    height: 575px;
+  
+    padding-left: 1.3rem;
+    /* height: 500px; */
+  }
+  
+  .badge {
+    background: black;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+  
+    font-weight: 500;
+  
+    border-radius: 50px;
+    opacity: 1;
+  }
+  
+  .blogTitleText {
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: .44rem;
+    padding-bottom: 1rem;
+  
+    line-height: 1.4;
+    width: 90%;
+  }
+  
+  .author {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  
+  .authorName {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .authorRole {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .category {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    margin: 0 .5rem;
+    
+    height: 28px;
+    color: white;
+  }
+  
+  .smallArticles {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  
+    margin-top: 2rem;
+  }
+  
+  .smallArticle {
+    width: 400px;
+    height: 250px;
+  
+    position: relative;
+  
+    flex: 1;
+    background: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .articleSubText {
+    width: 80%;
+
+    margin-top: 1rem;
+  }
+  
+  .articleSubImage {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+  }
+  
+  .articleSubImage:hover {
+    transform: scale(1.05);
+  }
+  
+  .smallArticlesTitle {
+    /* width: 80%; */
+    text-wrap: wrap;
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 0;
+  }  
+}

@@ -1,0 +1,263 @@
+.carouselContainer {
+  position: relative;
+  width: 100%;
+  margin: 2rem 0;
+
+  border-radius: 1.5rem;
+}
+
+.propertyCardImage {
+  width: 100%; 
+}
+
+.swiper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  /* mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 1%, rgb(0, 0, 0) 99%, rgba(0, 0, 0, 0) 100%) add; */
+  /* -webkit-mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 3%, rgb(0, 0, 0) 97%, rgba(0, 0, 0, 0) 100%) add; */
+}
+  
+.swiperSlide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 16px;
+  transition: transform 0.6s ease-in-out, opacity 0.5s ease-in-out !important;
+  opacity: 0.9;
+  margin: 0;
+}
+  
+.swiperSlideActive {
+  opacity: 1;
+}
+
+.propertyCard {
+  border-radius: 8px;
+  overflow: hidden;
+  height: auto;
+  /* max-width: 350px;  */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0; /* Centers the card */
+}
+
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 236px;
+  overflow: hidden;
+
+  border-radius: 1rem;
+}
+
+.imageWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.imageWrapper.active {
+  opacity: 1;
+}
+
+.contentContainer {
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.propertyName {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.propertyPrice {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.onwardsText {
+  font-size: 11px;
+  font-weight: 400;
+  text-align: right; 
+}
+
+.propertyDescription {
+  color: #666;
+  margin-bottom: 16px;
+  width: 70%;
+  font-weight: 500;
+}
+
+.propertyDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #777;
+  font-size: 14px;
+
+  width: 30%;
+  font-weight: 500;
+}
+
+.swiperButtonPrev,
+.swiperButtonNext {
+  display: none;
+}
+
+@media (min-width: 48em) {
+
+  .swiper {
+    mask: linear-gradient(80deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 30%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%) add;
+    -webkit-mask: linear-gradient(80deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 30%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%) add;
+  }
+
+  .propertyPrice, .propertyName {
+    font-size: 21px;
+  }
+
+  .onwardsText {
+    font-size: 8px;
+    font-weight: 400;
+    text-align: right; 
+  }
+    
+}
+
+
+@media (min-width: 75em) {
+  .carouselContainer {
+    padding: 10px;
+    margin: 4rem 0;
+  }
+  
+  .swiperButtonPrev,
+  .swiperButtonNext {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-80%);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    cursor: pointer;
+  
+    color: white !important;
+  
+    display: block;
+  }
+
+  .swiperButtonPrev {
+    left: 24%;
+    padding-right: 3px;
+  }
+  
+  .swiperButtonNext {
+    right: 24%;
+    padding-left: 3px;
+  }
+
+  .swiperButtonPrev::after,
+  .swiperButtonNext::after {
+    font-size: .8rem !important;
+    font-weight: 600 !important;
+    position: fixed;
+    top: 35%;
+  }
+
+  .swiperButtonPrev::after {
+    left: 34%;
+  }
+
+  .swiperButtonNext::after {
+    left: 45%;
+  }
+  
+  .contentContainer {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .propertyName {
+    font-size: 2rem;
+    font-weight: 500 !important;
+    margin: 0;
+  }
+
+  .onwardsText {
+    font-size: 12px;
+    text-align: right;
+  }
+  
+  .propertyPrice {
+    font-size: 2rem;
+    font-weight: 500 !important;
+    margin: 0;
+  }
+  
+  .propertyDescription {
+    color: #666;
+    margin-bottom: 16px;
+    flex-grow: 1;
+  }
+  
+  .propertyDetails {
+    display: flex;
+    justify-content: space-between;
+    color: #777;
+    font-size: 0.875rem;
+  }
+  
+  .propertyCard {
+    border-radius: 8px;
+    overflow: hidden;
+    height: auto;
+    max-width: 550px; /* Ensures the card fits properly */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; /* Centers the card */
+  }
+  
+  .imageContainer {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+
+    border-radius: 1rem;
+  }
+}
+

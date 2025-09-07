@@ -1,0 +1,60 @@
+.root {
+    width: 100%;
+}
+
+.panel {
+    background: transparent !important;
+    box-shadow: none;
+    border-bottom: 1px solid #cecece;
+    margin: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.MuiPaper-elevation1 {
+    box-shadow: unset !important;
+}
+
+.MuiPaper-root .panel {
+    padding-bottom: 0px !important;
+}
+
+.MuiExpansionPanelSummary-root .panel {
+    padding: 0 !important;
+    margin-top: 0.4rem;
+}
+
+.Mui-expanded .panel {
+    padding: 0 !important;
+}
+
+.heading {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.accImg {
+    width: 100%;
+    height: 341px;
+    border-radius: 14px;
+    transition: opacity 0.2s ease-in-out, transform 0.4s ease-in-out;
+    opacity: 0;
+    object-fit: cover;
+}
+
+.accImgVisible {
+    opacity: 1;
+}
+
+@media (min-width: 768px) {
+    .accImg {
+        height: 640px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .accImg {
+        min-width: 570px;
+        height: 510px;
+        border-radius: 20px;
+    }
+}

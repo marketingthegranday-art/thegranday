@@ -1,0 +1,138 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --navbar-height: 90px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Global class for full height containers that need to account for fixed navbar */
+.page-container {
+  min-height: calc(100vh - var(--navbar-height));
+}
+
+/* Alternative class for pages that want full height including navbar area */
+.full-height-with-navbar {
+  min-height: 100vh;
+  padding-top: var(--navbar-height);
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: var(--font-gilroy-medium);
+  height: 100vh;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+small {
+  font-size: 11px;
+  font-family: var(--font-gilroy-medium);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  -webkit-text-fill-color: #000 !important;
+}
+
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  -webkit-text-fill-color: #000 !important;
+}
+
+fieldset:-webkit-autofill,
+fieldset:-webkit-autofill:hover,
+fieldset:-webkit-autofill:focus,
+fieldset:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  -webkit-text-fill-color: #000 !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+@font-face {
+  font-family: 'gilroy-medium';
+  src: url('/fonts/Gilroy/Gilroy-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'gilroy-bold';
+  src: url('/fonts/Gilroy/Gilroy-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'gilroy-extrabold';
+  src: url('/fonts/Gilroy/Gilroy-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* These classes can be used to apply different font weights */
+.font-medium {
+  font-family: var(--font-gilroy-medium);
+}
+
+.font-bold {
+  font-family: var(--font-gilroy-bold);
+}
+
+.font-extrabold {
+  font-family: var(--font-gilroy-extrabold);
+}
+
+.pagewidth {
+  width: 100%;
+}
+
+@media (min-width: 80em) {
+
+  /* 1280px */
+  .pagewidth,
+  .appBody {
+    width: 1280px !important;
+    margin: 0px auto;
+  }
+}

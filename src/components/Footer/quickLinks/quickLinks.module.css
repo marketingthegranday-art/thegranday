@@ -1,0 +1,54 @@
+.quickLinks {
+    width: 100%;
+    background-color: #f3f4f6;
+    padding: 1.5rem 20px;
+    display: flex;
+    justify-content: start;
+}
+
+.quickLinksHeaders {
+    font-size: 1.2rem;
+    font-weight: 900;
+    padding-bottom: 1rem;
+    color: #97549F;
+}
+
+.quickLinksCity {
+    font-size: 14px;
+    font-family: var(--font-gilroy-medium);
+    cursor: pointer;
+}
+
+.quickLinksCity:hover {
+    color: #97549F;
+    cursor: pointer;
+}
+
+.quickLinksSpacing {
+    padding: 0;
+}
+
+.quickLinksWrapper {
+    width: 100%;
+    justify-content: start;
+}
+
+.quickLinksIndex {
+    cursor: initial !important;
+}
+
+.quickLinksIndex:hover {
+    color: #323c47 !important; 
+}
+
+@media (min-width: 49rem) {
+    .quickLinksWrapper {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 60rem) {
+    .quickLinks {
+        justify-content: center;
+    }
+} 
