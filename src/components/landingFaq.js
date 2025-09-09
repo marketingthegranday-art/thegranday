@@ -19,7 +19,7 @@ export default function LandingFaq() {
     const weddingFAQs = [
         {
             question: "How can I find the perfect wedding venue that fits my guest list and budget?",
-            answer: "Our platform makes venue selection effortless by allowing you to filter by location, capacity, amenities, and price range. Whether you're hosting an intimate gathering or a grand celebration, we help you discover verified venues with transparent pricing and availability. Plus, our expert recommendations save you time by suggesting venues that perfectly match your preferences."
+            answer: "Our platform makes venue selection effortless by allowing you to filter by location, capacity, amenities, and price range. Whether you&apos;re hosting an intimate gathering or a grand celebration, we help you discover verified venues with transparent pricing and availability. Plus, our expert recommendations save you time by suggesting venues that perfectly match your preferences."
         },
         {
             question: "Do you offer end-to-end wedding planning services?",
@@ -27,7 +27,7 @@ export default function LandingFaq() {
         },
         {
             question: "Can I customize the wedding décor as per my theme or preference?",
-            answer: "Absolutely! Our décor specialists work with you to bring your vision to life. Whether it's a floral extravaganza, royal palace setup, or a contemporary chic theme, we provide tailored décor solutions. You can also explore ready-made décor packages for quick and affordable options."
+            answer: "Absolutely! Our décor specialists work with you to bring your vision to life. Whether it&apos;s a floral extravaganza, royal palace setup, or a contemporary chic theme, we provide tailored décor solutions. You can also explore ready-made décor packages for quick and affordable options."
         },
         {
             question: "What types of catering options are available?",
@@ -101,7 +101,7 @@ export default function LandingFaq() {
                         }}
                         className={styles.landingHeadings}
                     >
-                        Everything you need to know <br /> before saying 'I Do'
+                        Everything you need to know <br /> before saying &apos;I Do&apos;
                     </Typography>
                     <Box
                         sx={{

@@ -14,7 +14,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
     return (
-        // @ts-ignore
+        
         <Slide
             direction="down"
             ref={ref}
@@ -43,7 +43,7 @@ export default function Navbar() {
             const outer = document.createElement('div');
             outer.style.visibility = 'hidden';
             outer.style.overflow = 'scroll';
-            // @ts-ignore
+            
             outer.style.msOverflowStyle = 'scrollbar';
             document.body.appendChild(outer);
 
@@ -86,7 +86,7 @@ export default function Navbar() {
                 window.removeEventListener('wheel', handleScroll);
             };
         }
-    }, [0]);
+    }, [isHomePage]);
 
     
 

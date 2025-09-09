@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "../styles/LandingBlogs.module.css";
 import { useRouter } from "next/navigation";
-import { Button } from "@mui/material";
 import Flex from '@react-css/flex';
 
 const articles = [

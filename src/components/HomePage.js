@@ -1,7 +1,7 @@
 "use client";
 import { Box } from "@mui/material";
 import styles from '../styles/landing.module.css';
-import { motion, useAnimation, useScroll, useTransform } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import React, { useEffect } from 'react';
 import { useSession } from 'next-auth/react';
@@ -44,7 +44,7 @@ const ScrollAnimationSection = ({ children, variants = fadeInUp, className = "" 
       } else if (loader.isLoading) {
           loader.hide();
       }
-  }, [status]);
+  }, [loader,status]);
 
   useEffect(() => {
       if (inView) {

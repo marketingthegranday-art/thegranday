@@ -26,9 +26,9 @@ export const Footer = memo(function Footer(props) {
 
     return (
         <>
-            {/* @ts-ignore */}
+            {/* "@ts-expect-error */}
             <div className={`${styles.footerBg} ${props.className}`}>
-                {/* @ts-ignore */}
+                {/* "@ts-expect-error */}
                 <div className={props?.wrap ? "listingwidth" : "pagewidth"}>
                     <div className={styles.footer}>
 

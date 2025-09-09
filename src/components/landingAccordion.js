@@ -12,7 +12,7 @@ export default function LandingAccordion() {
     const [expanded, setExpanded] = useState(0); // Track open panel
     const [visible, setVisible] = useState(!false);
 
-    const handleChange = (panel) => (event, isExpanded) => {
+    const handleChange = (panel) => () => {
         setVisible(false); // Hide the image first
         setTimeout(() => {
             setExpanded(panel); // Change the image source after a short delay

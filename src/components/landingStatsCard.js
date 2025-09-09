@@ -64,7 +64,7 @@ const LandingStatsCard = () => {
                         className={`${styles.cardSwitchBtn} ${cardSwitchIdx === 0 ? styles.cardSwitchBtnFilled : ''}`} 
                         onClick={() => setCardSwitchIdx(0)}
                     >
-                        Happening'25
+                        Happening&apos;25
                     </Box>
                     <Box 
                         sx={{ 
@@ -86,7 +86,7 @@ const LandingStatsCard = () => {
                         className={`${styles.cardSwitchBtn} ${cardSwitchIdx === 1 ? styles.cardSwitchBtnFilled : ''}`} 
                         onClick={() => setCardSwitchIdx(1)}
                     >
-                        Happened'24
+                        Happened&apos;24
                     </Box>
                 </Box>
                 <div className={styles.landingStatCard}>
@@ -110,7 +110,7 @@ const LandingStatsCard = () => {
                             className={`${styles.cardSwitchBtn} ${cardSwitchIdx === 0 ? styles.cardSwitchBtnFilled : ''}`} 
                             onClick={() => setCardSwitchIdx(0)}
                         >
-                            Happening'25
+                            Happening&apos;25
                         </Box>
                         <Box 
                             sx={{ 
@@ -131,7 +131,7 @@ const LandingStatsCard = () => {
                             className={`${styles.cardSwitchBtn} ${cardSwitchIdx === 1 ? styles.cardSwitchBtnFilled : ''}`} 
                             onClick={() => setCardSwitchIdx(1)}
                         >
-                            Happened'24
+                            Happened&apos;24
                         </Box>
                     </Box>
                     <Box sx={{ display: 'flex' }} className={styles.statCardContainer}>
@@ -165,7 +165,7 @@ const LandingStatsCard = () => {
                             Lehanga, ladoos and more
                         </div>
                         <div className={styles.statFooterSubtext}>
-                            Reflecting on the love we celebrated in 2024 and the new stories we're creating in 2025
+                            Reflecting on the love we celebrated in 2024 and the new stories we&apos;re creating in 2025
                         </div>
                     </Box>
                 </div>
@@ -174,7 +174,7 @@ const LandingStatsCard = () => {
                         Lehanga, ladoos and more
                     </div>
                     <div className={styles.statFooterSubtext}>
-                        Reflecting on the love we celebrated in 2024 and the new stories we're creating in 2025
+                        Reflecting on the love we celebrated in 2024 and the new stories we&apos;re creating in 2025
                     </div>
                 </Box>
             </Box>

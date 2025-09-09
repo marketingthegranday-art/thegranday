@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay, EffectCoverflow } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import Marquee from "react-fast-marquee";
 import styles from '../styles/landingReview.module.css';
 
